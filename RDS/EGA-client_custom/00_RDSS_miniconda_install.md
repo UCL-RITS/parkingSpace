@@ -73,7 +73,7 @@ Python 3.8 	Miniconda3 Linux 64-bit 	89.9 MiB 	1314b90489f154602fd794accfc904461
   `yes`    (to confirm initialization of miniconda3 installation)
 
 
-- From your project folder ( example  `/mountPoint/projectName` )  run the following command :
+- From your project folder RDS/EGA-client_custom/00_RDSS_miniconda_install.md( example  `/mountPoint/projectName` )  run the following command :
 
   `PATH=$PWD/miniconda3/bin:${PATH}`
 
@@ -87,9 +87,9 @@ Python 3.8 	Miniconda3 Linux 64-bit 	89.9 MiB 	1314b90489f154602fd794accfc904461
 
   and check that the command output returns the binaries from your local installation path:
 
-  `/mountPoint/projectName/miniconda3/bin/conda`
-  `/mountPoint/projectName/miniconda3/bin/python`
-  `/mountPoint/projectName/miniconda3/bin/pip`
+  `/mountPoint/projectName/miniconda3/bin/conda`  
+  `/mountPoint/projectName/miniconda3/bin/python`  
+  `/mountPoint/projectName/miniconda3/bin/pip`  
 
 
 
@@ -113,10 +113,3 @@ https://docs.conda.io/en/latest/miniconda.html#linux-installers
 Repos:  
 https://github.com/EGA-archive  
 https://github.com/EGA-archive/ega-download-client
-
-
----
-
-###### **2DOs**:
-
-- add instructions to install the tool and run it contained via VEnvs as tested.

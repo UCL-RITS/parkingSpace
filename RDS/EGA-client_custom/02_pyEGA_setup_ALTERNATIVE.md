@@ -1,23 +1,30 @@
 ### Setup the Env to run pyEGA tool from RDS nodes (ALTERNATIVE METHOD)
 
-You can try to install the tool by using this method if the EASY method did not succeed or if you are experiencing troubles with running conda and the pyEGA tool.
+Provided you are minimally experienced with python and the Linux CLI, you can try to install the tool by using the following alternative method, if the EASY method guide did not succeed, or if you are experiencing troubles with running **conda** and the pyEGA tool on our custom Systems installation.
 
+
+The following instructions can be run only when anaconda/miniconda setup has been successfully performed and the environment is functional for the user.
+
+Please get in touch if you experience any trouble running the commands in the following guide.
 
 ##### Environment Initialization :  
 
-`conda init bash`
+- initialize the conda environment
 
-if the users are running this straight after installing anaconda/miniconda as per the previous guide, they may experience the following error:
+  `conda init bash`
 
-```
- conda activate <VirtualEnv-NAME>
+  **NOTE 1 :**  
+  if the users are attempting to follow this guide in the same shell session, straight after installing anaconda/miniconda (as per the previous guide), they may experience the following error:
 
-CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
-To initialize your shell, run
+  ```
+  conda activate <VirtualEnv-NAME>
+
+  CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+  To initialize your shell, run
 
     $ conda init <SHELL_NAME>
 
-Currently supported shells are:
+    Currently supported shells are:
   - bash
   - fish
   - tcsh
@@ -25,68 +32,89 @@ Currently supported shells are:
   - zsh
   - powershell
 
-See 'conda init --help' for more information and options.
+  See 'conda init --help' for more information and options.
 
-IMPORTANT: You may need to close and restart your shell after running 'conda init'.
-```
+  IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+  ```
 
-in this case, please try as suggested above: close your shell session and start with a new one (the environment should be setup correctly the second time you log in)
+  in this case, please **close your shell session and start a new one** (the environment should be reset and setup correctly the second time you log back in)
 
-**NOTE :**  
-( to run apps with python 3.6 from System **may need** to set the following environmental variable  
-  `PYTHONPATH=/usr/lib/python3.6/site-packages/` )
+  **NOTE 2 :**  
+  ( to run apps with the System's interpreter **python 3.6** **may be necessary** to set the environmental variable `PYTHONPATH` as follows : )
+
+  `PYTHONPATH=/usr/lib/python3.6/site-packages/`
 
 ##### Instructions :
 
 - pick a name for your virtualEnv and set it with this variable  
+
   `testVENV="chosen-name"`  
 
-- create the virtualEnv with basic packages for this tool to run  
+- create a basic virtualEnv with the 2 minimum requirement packages (**pip, psutil** ) for this tool to run :  
+
   `conda create --name $testVENV pip psutil`  
 
-- activate the virtualEnv  
+- activate the newly created virtualEnv  
+
   `conda activate testVENV`  
 
-- clone the pyEGA_client github repo and browse into its (sub)folders to find the **requirements.txt** file  ( in this case it was in the **ega-download-client-master** folder )
+- clone the pyEGA_client github repo
+
+- browse into the repo (sub)folders to find the **requirements.txt** file  
+
 
 **------------------------------------------------------------------ ! IMPORTANT ! ---------------------------------------------------------------------------**  
-please do not run the bash scripts from this Repo as the basic custom environment is already setup and further tweaks highlighted below.   
+please do NOT run the **bash scripts** from the original Repo guide, as the basic custom environment is already setup here, and any further needed tweak is highlighted below.   
 **-----------------------------------------------------------------------------------------------------------------------------------------------------------------**  
 
 - install the tools dependencies (requested packages) :
 
   `conda install --yes --file requirements.txt`  
 
-- if a manual installation is needed for the packages, install them like this:   
-```
-conda install -c bioconda python-htsget
-conda install -c conda-forge psutil
-conda install -c conda-forge tqdm
-```
+  **NOTE :**  
+  in case of conda installation failures or if a manual installation of a specific package/version is needed, please install them like this:   
 
-- check and list your base and created virtualEnvs :  
-`conda info --envs`  
-`conda list`  
+  ```
+  conda install -c bioconda python-htsget
+  conda install -c conda-forge psutil
+  conda install -c conda-forge tqdm
+  ```
 
-- test that the downloaded tool is working once dependencies have been installed, by navigating to its folder and runnning the main program command like this :
+- list and inspect the properties of your base and newly created virtualEnvs :  
+
+  `conda info --envs`  
+  `conda list`  
+
+- test that the downloaded tool is working once all dependencies have been installed and conflicts resolved, by navigating to its folder and running the main program command like this :
 
   `./pyega3.py -d -t datasets`
 
+  you should see the expected output
 
+---
 
+Use the tool's help for more info  
 
+`pyega3 --help`
 
-**HINT :** Please check the original Repo documentation and **README.md** file for more help and instructions.
+Plus if possible Refer to the original tool documentation.
 
-See the original documentation
+Please check the original github Repo documentation (as per Refs below); specifically the main **README.md** file for more help and instructions, on the following topics :
+
+- create a credential file to use with the tool to access EGA datasets
+- retrieve datasets with the tool and save them in a specific path, by pointing the destination path to somewhere else (if needed).
 
 ---
 
 ### Refs
+
+###### pyEGA3 - EGA python client version 3.4.0
+[https://github.com/EGA-archive/ega-download-client](https://github.com/EGA-archive/ega-download-client)  
+###### pyEGA   
+[https://github.com/blachlylab/pyega](https://github.com/blachlylab/pyega) by James Blachly
 
 ---
 
 #### 2DOs
 
 - instructions for the user on how to create in their own home folder their credential file to use to access EGA datasets, with this tool and how to point it to their credential files
-- refs to original docs etc.
