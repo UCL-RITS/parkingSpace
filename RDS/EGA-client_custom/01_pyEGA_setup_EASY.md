@@ -16,23 +16,22 @@ Please get in touch if you experience any trouble running the commands in the fo
 
   `conda info`
 
-  the output should return the following :
+  the output should return the following :  
 
-  ```
+  ```   
   channel URLs : https://conda.anaconda.org/conda-forge/linux-64
-               https://conda.anaconda.org/conda-forge/noarch
-               https://conda.anaconda.org/bioconda/linux-64
-               https://conda.anaconda.org/bioconda/noarch
-               https://repo.anaconda.com/pkgs/main/linux-64
-               https://repo.anaconda.com/pkgs/main/noarch
-               https://repo.anaconda.com/pkgs/r/linux-64
-               https://repo.anaconda.com/pkgs/r/noarch
-```
+                 https://conda.anaconda.org/conda-forge/noarch
+                 https://conda.anaconda.org/bioconda/linux-64
+                 https://conda.anaconda.org/bioconda/noarch
+                 https://repo.anaconda.com/pkgs/main/linux-64
+                 https://repo.anaconda.com/pkgs/main/noarch
+                 https://repo.anaconda.com/pkgs/r/linux-64
+                 https://repo.anaconda.com/pkgs/r/noarch
+
+ ```
 
 
-
-
-  where **bioconda** and **conda-forge** can be spotted as clearly added.
+  (where **bioconda** and **conda-forge** can be spotted as clearly added.)
 
 - install the pyEGA_cliet tool directly from anaconda repositories  
 
