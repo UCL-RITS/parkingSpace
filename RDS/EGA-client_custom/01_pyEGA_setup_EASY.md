@@ -1,5 +1,5 @@
 
-### Setup the Env to run pyEGA tool from RDS nodes ( EASY )
+### Setup the Env to run pyEGA tool from RDS nodes ( EASY METHOD)
 
 The following instructions can be run only when anaconda/miniconda setup has been successfully performed and the environment is functional for the user.
 

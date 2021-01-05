@@ -1,4 +1,7 @@
-### Setup the Env to run pyEGA tool from RDS nodes  
+### Setup the Env to run pyEGA tool from RDS nodes (ALTERNATIVE METHOD)
+
+You can try to install the tool by using this method if the EASY method did not succeed or if you are experiencing troubles with running conda and the pyEGA tool.
+
 
 ##### Environment Initialization :  
 
@@ -46,9 +49,9 @@ in this case, please try as suggested above: close your shell session and start 
 
 - clone the pyEGA_client github repo and browse into its (sub)folders to find the **requirements.txt** file  ( in this case it was in the **ega-download-client-master** folder )
 
-**--------------------------------------------------------------- ! IMPORTANT ! ---------------------------------------------------------------------------**  
+**------------------------------------------------------------------ ! IMPORTANT ! ---------------------------------------------------------------------------**  
 please do not run the bash scripts from this Repo as the basic custom environment is already setup and further tweaks highlighted below.   
-**------------------------------------------------------------------------------------------------------------------------------------------------------------------------------**  
+**-----------------------------------------------------------------------------------------------------------------------------------------------------------------**  
 
 - install the tools dependencies (requested packages) :
 
