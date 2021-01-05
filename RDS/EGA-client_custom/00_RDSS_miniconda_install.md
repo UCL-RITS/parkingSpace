@@ -79,12 +79,44 @@ Python 3.8 	Miniconda3 Linux 64-bit 	89.9 MiB 	1314b90489f154602fd794accfc904461
 
   this will allow your shell to reference the current minicondaX installation of the Python interpreter and not the system global one(s).
 
+  To test this, run from CLI :
+
+  `which conda`  
+  `which python`  
+  `which pip`  
+
+  and check that the command output returns the binaries from your local installation path:
+
+  `/mnt/gpfs/live/ritd-ag-project-rd0000-projectA/miniconda3/bin/conda`
+  `/mnt/gpfs/live/ritd-ag-project-rd0000-projectA/miniconda3/bin/python`
+  `/mnt/gpfs/live/ritd-ag-project-rd0000-projectA/miniconda3/bin/pip`
+
+
+
+
+
+
+---
+##### REFS:
+
+##### miniconda:
+
+https://docs.anaconda.com/anaconda/install/linux/
+
+installation  
+https://conda.io/projects/conda/en/latest/user-guide/install/linux.html#install-linux-silent
+
+linux installers and checksums  
+https://docs.conda.io/en/latest/miniconda.html#linux-installers
+
+
+Repos:  
+https://github.com/EGA-archive  
+https://github.com/EGA-archive/ega-download-client
 
 
 ---
 
 ###### **2DOs**:
-
-- add instructions to test the last step was successful and the User can locally run without elevated privileges the miniconda python interpreter.
 
 - add instructions to install the tool and run it contained via VEnvs as tested.
