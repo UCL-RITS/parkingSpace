@@ -35,7 +35,7 @@ channel URLs : https://conda.anaconda.org/conda-forge/linux-64
   `which pyega3`
 
   (example of output : )  
-  `/mnt/gpfs/live/ritd-ag-project-rd0000-projectA/bin/pyega3`
+  `/mountPoint/projectName/bin/pyega3`
 
 - test the tool functions  
 

@@ -4,7 +4,7 @@
 - navigate to your RDS project folder  
 
   (example):  
-  `/mnt/gpfs/live/ritd-ag-project-rd0000-projectA`  
+  `/mountPoint/projectName`  
 
 - download the official  
 
@@ -44,7 +44,7 @@ Python 3.8 	Miniconda3 Linux 64-bit 	89.9 MiB 	1314b90489f154602fd794accfc904461
   and select + copy the output of the command;
 
   (example of output :  
-  `/mnt/gpfs/live/ritd-ag-project-rd0000-projectA`  
+  `/mountPoint/projectName`  
   this text must be copied and it will be pasted later on, during miniconda installation process; - see the following instructions ).
 
 - execute the program and begin the local installation of miniconda:
@@ -63,17 +63,17 @@ Python 3.8 	Miniconda3 Linux 64-bit 	89.9 MiB 	1314b90489f154602fd794accfc904461
 - paste now here the value from the path copied at the step above and make a new folder afterwards:
 
   (example:  
-    if you copied `/mnt/gpfs/live/ritd-ag-project-rd0000-projectA`  from the previous steps, paste this value here as shown below and please **NOTE** the following:  
+    if you copied `/mountPoint/projectName`  from the previous steps, paste this value here as shown below and please **NOTE** the following:  
   the last sub-folder in the pasted path (in this case "/miniconda3"), has been manually added to make a new local sub-folder, that will contain this installation:
 
-  `/mnt/gpfs/live/ritd-ag-project-rd0000-projectA/miniconda3`  
+  `/mountPoint/projectName/miniconda3`  
 
   type then
 
   `yes`    (to confirm initialization of miniconda3 installation)
 
 
-- From your project folder ( example  `/mnt/gpfs/live/ritd-ag-project-rd0000-projectA` )  run the following command :
+- From your project folder ( example  `/mountPoint/projectName` )  run the following command :
 
   `PATH=$PWD/miniconda3/bin:${PATH}`
 
@@ -87,9 +87,9 @@ Python 3.8 	Miniconda3 Linux 64-bit 	89.9 MiB 	1314b90489f154602fd794accfc904461
 
   and check that the command output returns the binaries from your local installation path:
 
-  `/mnt/gpfs/live/ritd-ag-project-rd0000-projectA/miniconda3/bin/conda`
-  `/mnt/gpfs/live/ritd-ag-project-rd0000-projectA/miniconda3/bin/python`
-  `/mnt/gpfs/live/ritd-ag-project-rd0000-projectA/miniconda3/bin/pip`
+  `/mountPoint/projectName/miniconda3/bin/conda`
+  `/mountPoint/projectName/miniconda3/bin/python`
+  `/mountPoint/projectName/miniconda3/bin/pip`
 
 
 
