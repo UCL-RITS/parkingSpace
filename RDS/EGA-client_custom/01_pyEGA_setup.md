@@ -1,11 +1,13 @@
 ### Setup the Env to run pyEGA tool from RDS nodes  
 
+##### Environment Initialization :  
 
 `conda init bash`
 
-may get error:
+if the users are running this straight after installing anaconda/miniconda as per the previous guide, they may experience the following error:
+
 ```
- conda activate testVENV
+ conda activate <VirtualEnv-NAME>
 
 CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
 To initialize your shell, run
@@ -25,8 +27,13 @@ See 'conda init --help' for more information and options.
 IMPORTANT: You may need to close and restart your shell after running 'conda init'.
 ```
 
+in this case, please try as suggested above: close your shell session and start with a new one (the environment should be setup correctly the second time you log in)
 
-( to run apps with python 3.6 from System may need to set `PYTHONPATH=/usr/lib/python3.6/site-packages/` )
+**NOTE :**  
+( to run apps with python 3.6 from System **may need** to set the following environmental variable  
+  `PYTHONPATH=/usr/lib/python3.6/site-packages/` )
+
+##### Instructions :
 
 - pick a name for your virtualEnv and set it with this variable  
   `testVENV="chosen-name"`  
@@ -39,7 +46,7 @@ IMPORTANT: You may need to close and restart your shell after running 'conda ini
 
 - clone the pyEGA_client github repo and browse into its (sub)folders to find the **requirements.txt** file  ( in this case it was in the **ega-download-client-master** folder )
 
-**----------------------------------------------------------------------------- ! IMPORTANT ! ------------------------------------------------------------------------------------------**  
+**------------------------------------------------------------------------- ! IMPORTANT ! --------------------------------------------------------------------------------------**  
 please do not run the bash scripts from this Repo as the basic custom environment is already setup and further tweaks highlighted below.   
 **---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------**  
 
@@ -70,10 +77,13 @@ conda install -c conda-forge tqdm
 
 See the original documentation
 
+---
 
+### Refs 
 
 ---
 
 #### 2DOs
 
 - instructions for the user on how to create in their own home folder their credential file to use to access EGA datasets, with this tool and how to point it to their credential files
+- refs to original docs etc.
