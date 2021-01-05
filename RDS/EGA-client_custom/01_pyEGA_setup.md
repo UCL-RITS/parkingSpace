@@ -46,9 +46,9 @@ in this case, please try as suggested above: close your shell session and start 
 
 - clone the pyEGA_client github repo and browse into its (sub)folders to find the **requirements.txt** file  ( in this case it was in the **ega-download-client-master** folder )
 
-**------------------------------------------------------------------------- ! IMPORTANT ! --------------------------------------------------------------------------------------**  
+**--------------------------------------------------------------- ! IMPORTANT ! ---------------------------------------------------------------------------**  
 please do not run the bash scripts from this Repo as the basic custom environment is already setup and further tweaks highlighted below.   
-**---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------**  
+**------------------------------------------------------------------------------------------------------------------------------------------------------------------------------**  
 
 - install the tools dependencies (requested packages) :
 
@@ -79,7 +79,7 @@ See the original documentation
 
 ---
 
-### Refs 
+### Refs
 
 ---
 
