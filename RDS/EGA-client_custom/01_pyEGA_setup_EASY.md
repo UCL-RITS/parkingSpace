@@ -19,7 +19,7 @@ Please get in touch if you experience any trouble running the commands in the fo
   the output should return the following :
 
   ```
-channel URLs : https://conda.anaconda.org/conda-forge/linux-64
+  channel URLs : https://conda.anaconda.org/conda-forge/linux-64
                https://conda.anaconda.org/conda-forge/noarch
                https://conda.anaconda.org/bioconda/linux-64
                https://conda.anaconda.org/bioconda/noarch
@@ -28,6 +28,9 @@ channel URLs : https://conda.anaconda.org/conda-forge/linux-64
                https://repo.anaconda.com/pkgs/r/linux-64
                https://repo.anaconda.com/pkgs/r/noarch
 ```
+
+
+
 
   where **bioconda** and **conda-forge** can be spotted as clearly added.
 
