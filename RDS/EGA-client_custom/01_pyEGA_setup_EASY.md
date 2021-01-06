@@ -1,10 +1,10 @@
-# PyEGA tool setup on RDSS
+# PyEGA tool setup on RDS systems
 
 ## Prerequisites
 
 - Guide 00 - miniconda installation
 
-## Environment Setup : run pyEGA tool from RDS nodes ( EASY METHOD)
+## Environment Setup to run pyEGA tool on RDS systems ( EASY METHOD)
 
 #### Instructions
 
@@ -52,4 +52,4 @@ Use the tool's help for more info
 
 `pyega3 --help`
 
-Plus if possible Refer to the original tool documentation.
+Whenever possible, please refer to the original tool's documentation.
