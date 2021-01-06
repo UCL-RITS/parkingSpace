@@ -1,9 +1,10 @@
+# PyEGA tool setup on RDSS
 
-### Setup the Env to run pyEGA tool from RDS nodes ( EASY METHOD)
+## Prerequisites
 
-The following instructions can be run only when anaconda/miniconda setup has been successfully performed and the environment is functional for the user.
+- Guide 00 - miniconda installation
 
-Please get in touch if you experience any trouble running the commands in the following guide.
+## Environment Setup : run pyEGA tool from RDS nodes ( EASY METHOD)
 
 #### Instructions
 
@@ -27,7 +28,7 @@ Please get in touch if you experience any trouble running the commands in the fo
                  https://repo.anaconda.com/pkgs/main/noarch
                  https://repo.anaconda.com/pkgs/r/linux-64
                  https://repo.anaconda.com/pkgs/r/noarch```
-  
+
 (where **bioconda** and **conda-forge** can be spotted as clearly added.)
 
 - install the pyEGA_cliet tool directly from anaconda repositories  
