@@ -1,13 +1,17 @@
-### Setup the Env to run pyEGA tool from RDS nodes (ALTERNATIVE METHOD)
+# PyEGA tool setup on RDS systems
 
-Provided you are minimally experienced with python and the Linux CLI, you can try to install the tool by using the following alternative method, if the EASY method guide did not succeed, or if you are experiencing troubles with running **conda** and the pyEGA tool on our custom Systems installation.
+## Prerequisites
+
+- Guide 00 - miniconda installation  
+- unsuccessfull run of Guide 01
+- basic experience with Python and Linux CLI
+
+## Environment Setup to run pyEGA tool on RDS systems (ALTERNATIVE METHOD)
+
+If the procedure highlighted in the EASY method guide was NOT successful, or the User is experiencing troubles with running **conda** and the `pyEGA_client` tool itself on RDS custom Systems, the User can try to perform an installation of the tool by using this alternative method.
 
 
-The following instructions can be run only when anaconda/miniconda setup has been successfully performed and the environment is functional for the user.
-
-Please get in touch if you experience any trouble running the commands in the following guide.
-
-##### Environment Initialization :  
+### Environment Initialization :  
 
 - initialize the conda environment
 
@@ -44,7 +48,7 @@ Please get in touch if you experience any trouble running the commands in the fo
 
   `PYTHONPATH=/usr/lib/python3.6/site-packages/`
 
-##### Instructions :
+### Instructions :
 
 - pick a name for your virtualEnv and set it with this variable  
 
