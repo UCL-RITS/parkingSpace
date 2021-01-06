@@ -60,6 +60,8 @@ Please get in touch if you experience any trouble running the commands in the fo
 
 - clone the pyEGA_client github repo
 
+  `git clone https://github.com/EGA-archive/ega-download-client.git`
+
 - browse into the repo (sub)folders to find the **requirements.txt** file  
 
 
@@ -92,16 +94,68 @@ please do NOT run the **bash scripts** from the original Repo guide, as the basi
   you should see the expected output
 
 ---
+### Login with custom credentials to EGA/EBI remote servers
+
+In order to be able to download data-sets you should register on EGA website and upon registration receive your **User Access Credentials** that will be needed by the tool to access the remote servers on your behalf, and allow you to download the needed data-sets.
+
+Credentials can be passed to the pyEGA client tool in 2 ways :  
+
+1. **interactive**, via the command line ( ! ADVISED METHOD ! )
+
+  `pyega3 <command1> <argument1>`
+
+  just run the tool as above and at prompt input in 2 steps username and the password.
+
+
+2. using a `.json` **configuration file** with the credentials stored in it ( ! LESS SECURE METHOD ! )  
+
+- clone the default config-file into your protected home folder and modify it with your text editor of choice to include only your own EGA credentials:  
+
+  `cp ega-download-client/pyega/config/default_credential_file.json /home/my_username/pyEGA3-Creds.json`
+
+- when running commands, point the tool to use your current credential file with the `-cf` flag  
+
+    `pyega3 -cf /home/my_username/pyEGA3-Creds.json <command1> <argument1>`
+
+
+
+
+**IMPORTANT :**  
+
+If you are working in a shared environment or project folder, please consider that **we strongly recommend our users to use method 1. above** , and  advise against the use of method 2. for reasons related to data privacy and security.
+
+If you choose to use method 2 for any reason, please make sure that you store your credentials in a `.json` file that resides in **your own (private) home folder** and **NOT in a group-shared/accessible folder**, such as normally is the case for projects folders, for instance.  
+
+
+
+---
+
+###### examples:
+
+- test that your own credential-file is working and check what data-sets you have access to :
+
+  `pyega3 -cf /home/my_username/CredentialsFile.json datasets`
+
+
+
+For more information and instructions, please see Refs below, "video tutorial" at video paragraphs :
+- Defining your credentials file ( at [0:41"] of the recording )  
+
+- Interactive login ( at [8':27"] of the recording )
+
+
+---
 
 Use the tool's help for more info  
 
 `pyega3 --help`
 
-Plus if possible Refer to the original tool documentation.
+and Refer to the original tool's online documentation. (see Refs below)
 
-Please check the original github Repo documentation (as per Refs below); specifically the main **README.md** file for more help and instructions, on the following topics :
+If further guidance is needed, please make sure to check the original github Repo documentation;  
+specifically the main **README.md** file for more info and help on the following topics :
 
-- create a credential file to use with the tool to access EGA datasets
+- access EGA datasets with a credential file or via interactive CLI session
 - retrieve datasets with the tool and save them in a specific path, by pointing the destination path to somewhere else (if needed).
 
 ---
@@ -113,8 +167,5 @@ Please check the original github Repo documentation (as per Refs below); specifi
 ###### pyEGA   
 [https://github.com/blachlylab/pyega](https://github.com/blachlylab/pyega) by James Blachly
 
----
-
-#### 2DOs
-
-- instructions for the user on how to create in their own home folder their credential file to use to access EGA datasets, with this tool and how to point it to their credential files
+###### Video Tutorial  
+[https://embl-ebi.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=be79bb93-1737-4f95-b80f-ab4300aa6f5a](https://embl-ebi.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=be79bb93-1737-4f95-b80f-ab4300aa6f5a)
