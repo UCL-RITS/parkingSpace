@@ -1,12 +1,12 @@
-### Login with custom credentials to EGA/EBI remote servers
+# Login with custom credentials to EGA/EBI remote servers
 
-##### Prerequisites
+## Prerequisites
 
 - Guide 00 - miniconda installation
 - Guide 01 (or Guide 02 alternatively) - pyEGA_client installation
-- online registration to EGA/EBI website to acquire credentials
+- online registration to EGA/EBI website to acquire User Access Credentials
 
-##### Users Access
+## Users Access
 
 In order to be able to download data-sets you must be registered on the EGA website and upon registration receive your **User Access Credentials** ; these will be needed by the tool to access the remote servers on your behalf, and allow you to download the needed data-sets.
 
